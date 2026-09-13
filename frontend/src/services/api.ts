@@ -9,7 +9,7 @@ export type Blog = {
 
 export type BlogInput = Omit<Blog, "id" | "date_created">;
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "/blogs";
 
 async function request<T>(url: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${url}`, {
