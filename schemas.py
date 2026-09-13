@@ -17,5 +17,3 @@ class BlogResponse(BaseModel):
     class Config():
         orm_mode = True
 
-class BlogUpdate(BaseModel):
-    content: str | None = None
